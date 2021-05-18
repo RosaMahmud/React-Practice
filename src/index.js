@@ -4,10 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const name = 'Rosa Mahmud';
+const element = <h1>Hello, {name}</h1>;
+
 ReactDOM.render(
   <React.StrictMode>
-  {/* <App /> */}
-  <h1>Hello, world!</h1>, 
+ {element}, 
   </React.StrictMode>,
   document.getElementById('root')
 );
