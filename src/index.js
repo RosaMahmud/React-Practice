@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
-import Mailbox from './Mailbox';
+import Blog from './Blog';
 
-const messages = ['hello', 'hi'];
+const posts = [
+    {id:1 , title: 'Hello World', content:'Welcome to learning react'},
+    {id:2 , title: 'Installation complete', content:'you can install react from npm.'}
+]
 ReactDOM.render(
-    <Mailbox unreadMessages = {messages}/>,
+    <Blog posts = {posts}/>,
     document.getElementById ('root')
 );
 
